@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Welcome Page</title>
+<link href="styleForLogin.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/310252626e.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body onload="first();" id="login">
+
+
+	<div class="box" id="box1">
+        <i class="fa-solid fa-xmark" style="float:right;font-size:2rem;margin: 3%;" onclick="returnOne()"></i><h1 class="head">Log In</h1>
+        <input type="text" id="name" placeholder="Login Id" class="input"><br>
+        <input type="password" id="password" placeholder="Password" class="input"><br>
+        <button id="button1" onclick="validate();">Log in</button>
+        <div id="result"></div>
+        <p class="ptag">Not a user?<span style="color:blue" onclick="signUpform();">create an account</span></p>
+    </div>
+	
+	
+	
+	
+	
+<div id="mainContainer">
+
+
+<div id="small">
+        <div><img src="logo.png" id="logo"></div>
+        <div id="titles"> <h2 class="headlines" onclick="login()">Log in</h2>
+            <h2 class="headlines" onclick="signUp()">Sign Up</h2>
+            <a href="#about" class="links"><h2 class="headlines">About</h2></a>
+            <a href="#Details" class="links"><h2 class="headlines">Details</h2></a>
+            </div>
+    </div>
+    <div id="big">
+        <h1 id="about" class="subHead">About</h1>
+        <div id="aboutDiv">
+            <div class="abouts"><h2 class="aboutTitle">What is Lorem Ipsum?</h2><p class="aboutPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+            <div class="abouts"><h2 class="aboutTitle">Why do we use it?</h2><p class="aboutPara">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>
+            <div class="abouts"><h2 class="aboutTitle">Where does it come from?</h2><p class="aboutPara">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC</p></div>
+        </div>
+        <h2 id="Details" class="subHead">Details</h2>
+        <div id="detailsDiv">
+        <p>#3,Main road,<br>Mathalamparai Village,<br>Tenkasi,<br>Tamilnadu-627435<br>Phone No.:9876543210<br>E-mail:daycarecenter@email.com</p>
+        </div>
+    </div>
+    <div id="bottomDiv">
+    <div style="display:flex;">
+	    <div>
+	    <h2 class="headlines" onclick="login()">Log in</h2>
+	    <h2 class="headlines">Sign Up</h2>
+	    </div>
+	    <div style="margin-left: 100px;">
+	    <a href="#about" class="links"><h2 class="headlines">About</h2></a>
+	    <a href="#Details" class="links"><h2 class="headlines">Details</h2></a></div>
+	    </div>
+     <div>
+     <i class="fa-brands fa-facebook footerIcon"></i>
+     <i class="fa-brands fa-instagram footerIcon"></i>
+     <i class="fa-brands fa-twitter footerIcon"></i>
+     </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box" id="box2">
+<i class="fa-solid fa-xmark" style="float:right;font-size:2rem;margin: 3%;" onclick="returnOne()"></i>
+<h1 class="head">Sign Up</h1>
+<div style="display:flex;justify-content: space-around;" id="child">
+
+
+<div>
+<h1>Your Details</h1>
+<input type="text" id="signName" placeholder="Enter your Name" class="input"><br>
+<label for="regions" style="position: absolute;left: 10%;top: 34%;font-size: 1.3rem;">Choose a region:</label>
+<select name="regions" id="regions" class="input">
+  <option value="Tenkasi">Tenkasi</option>
+  <option value="Kadayam">Kadayam</option>
+  <option value="Sankarankoil">Sankarankovil</option>
+  <option value="Shencottai">Shengottai</option>
+  <option value="Alangulam">Alangulam</option>
+</select><br>
+<input type="text" id="number" placeholder="Enter your Number" class="input"><br>
+<input type="password" id="signPassword" placeholder="password" class="input"><br>
+<input type="password" id="confirmPassword" placeholder="confirm password" class="input"><br>
+</div>
+<div>
+<h1>Child Details</h1>
+<input type="text" id="childName" placeholder="Name" class="input"><br>
+<!-- <input type="text" id="password" placeholder="Age" class="input"><br> -->
+<input type="date" id="childAge" class="input"><br>
+<input type="number" id="childClass" placeholder="Class" class="input"><br>
+<input type="text" id="childSchool" placeholder="School name" class="input"><br>
+</div>
+</div>
+<!-- <button onclick="addChild();">Add another child</button> -->
+<!-- <button onclick="removechild();">remove</button> -->
+<button id="button1" onclick="signUpProcess();" style="margin-right: 16%;float: right;">Sign up</button>
+<div id="result2"></div>
+
+<p class="ptag" style="margin: 12% 0 0 36%;">Already a user?<span style="color:blue" onclick="signInform();">Sign In</span></p>
+<script src="scriptForLogin.js" type="text/javascript"></script>
+</div>
+</body>
+</html>
